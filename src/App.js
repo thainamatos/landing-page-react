@@ -26,27 +26,29 @@ const App = () => {
               store. Add your email below to stay up-to-date with announcements
               and our launch deals.
             </p>
-            <div className="image">
-              <img src="./image/hero-desktop.jpg" alt="" />
-            </div>
+            
             <form>
-              <input
-                type="email"
-                className="email"
-                placeholder="Email Adress"
-              />
-              <button className="btn" type="submit">
-              <SlArrowRight size={20} color="#c010b1" />
-              </button>
+              <div className="outline">
+                <input
+                  type="email"
+                  className="email"
+                  placeholder="Email Adress"
+                />
+                <button className="btn" type="submit">
+                <SlArrowRight size={20} color="#fff" />
+                </button>
+              </div>
         
             </form>
+
           </div>
           
         </main>
-        <div>
+        
+      </div>
+      <div className="image">
           <img src={MainPhoto} alt="" />
         </div>
-      </div>
     </div>
   );
 };
